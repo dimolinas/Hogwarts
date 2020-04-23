@@ -1,8 +1,10 @@
 @font-face{
-    font-family: "Harry P";
+    font-family: "HARRYP__";
     src: url("../fonts/HARRYP__.TTF");
-    font-family: "Sofia Pro regular";
-    src: url("../fonts/SofiaProRegular.ttf");
+
+
+/*     font-family: "Sofia Pro regular";
+    src: url("../fonts/SofiaProRegular.ttf"); */
 }
 
 /* Estilos para barra scroll en firefox */
@@ -61,7 +63,7 @@ body{
 
 .containerMenu-left a{
     font-size: 40px;
-    font-family: "Harry P";
+    font-family: HARRYP__;
     text-decoration: none;
     color: #A64E4E;
 
@@ -79,7 +81,7 @@ body{
 
 .containerMenu-rigth a{
     font-size: 40px;
-    font-family: "Harry P";
+    font-family: HARRYP__;
     text-decoration: none;
     color: #A64E4E;
 
@@ -251,7 +253,7 @@ body{
     text-align: center;
     margin: 5px;
     color: #8B7369;
-    font-family: "Harry P";
+    font-family: "HARRYP__";
     font-size: 50px;
     width: 100px;
     /* border: 2px solid white; */
@@ -305,7 +307,7 @@ body{
     text-align: center;
     margin: 5px;
     color: #8B7369;
-    font-family: "Harry P";
+    font-family: "HARRYP__";
     font-size: 50px;
     width: 100px;
 }
@@ -385,7 +387,7 @@ body{
     text-align: center;
     margin: 5px;
     color: #C1B6B6;
-    font-family: "Harry P";
+    font-family: "HARRYP__";
     font-size: 50px;
     width: 100px;
 }
@@ -401,7 +403,7 @@ body{
 
 .container-events-nav a{
     color: #C1B6B6;
-    font-family: "Harry P";
+    font-family: "HARRYP__";
     /* border: 2px solid white; */
     text-decoration: none;
     font-size: 35px;
@@ -573,7 +575,7 @@ body{
     text-align: center;
     margin: 5px;
     color: #C1B6B6;
-    font-family: "Harry P";
+    font-family: "HARRYP__";
     font-size: 50px;
     width: 100px;
 }
