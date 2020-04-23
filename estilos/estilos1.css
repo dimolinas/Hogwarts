@@ -1,0 +1,724 @@
+@font-face{
+    font-family: "Harry P";
+    src: url("../fonts/HARRYP__.TTF");
+    font-family: "Sofia Pro regular";
+    src: url("../fonts/SofiaProRegular.ttf");
+}
+
+/* Estilos para barra scroll en firefox */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #6C6C6C #392A31;
+}
+
+/* Estilos para barra scroll chrome-edge-safari */
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #392A31;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #6C6C6C;
+    border-radius: 20px;
+    border: 3px solid #392A31;
+  }
+
+body{
+    margin: 0;
+    background-color:#926D55;
+    overflow: auto;
+}
+.header{
+    width: 100%;
+    color: transparent;
+    height: auto;
+    display: block;
+}
+.barNavegation{
+    /* position: absolute; */
+    width: inherit;
+    height: 19px;
+    background-color: #834C50;
+}
+.containerMenu-left{
+    width: 50%;
+    display: flex;
+    float: left;
+    height: 60px;
+    background-color: #392A31;
+    justify-content: center;
+}
+
+.containerMenu-rigth{
+    width: 50%;
+    display: flex;
+    float: right;
+    height: 60px;
+    background-color: #392A31;
+    justify-content: center;
+}
+
+.containerMenu-left a{
+    font-size: 40px;
+    font-family: "Harry P";
+    text-decoration: none;
+    color: #A64E4E;
+
+    text-align: center;
+    height: 38px;
+    width: 75vw*0.25;
+    position: relative;
+    display: inline-block;
+    
+    /* border:2px solid white; */
+    padding: 10px 50px;
+    background-color: transparent;
+    transition: color 0.5s, background 0.5s;
+}
+
+.containerMenu-rigth a{
+    font-size: 40px;
+    font-family: "Harry P";
+    text-decoration: none;
+    color: #A64E4E;
+
+    text-align: center;
+    height: 38px;
+    width: 75vw*0.25;
+    position: relative;
+    display: inline-block;
+    
+    /* border:2px solid white; */
+    padding: 10px 50px;
+    background-color: transparent;
+    transition: color 0.5s, background 0.5s;
+}
+
+.containerMenu-left a:hover{
+    background-color: #A64E4E;
+    color: #392A31;
+}
+
+.containerMenu-rigth a:hover{
+    background-color: #A64E4E;
+    color: #392A31;
+}
+
+.containerMenu-left a:active{
+    box-shadow: inset 0 0 20px #392A31;
+}
+
+.containerMenu-rigth a:active{
+    box-shadow: inset 0 0 20px #392A31;
+}
+
+.shield{
+    width: 276px;
+    height: 176px;
+    background-image: url("../imagenes/imageShield.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.imageBackground{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: #834C50;
+    background-image: url("../imagenes/1castleBackground.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-size: 100%;
+    image-rendering: auto;
+
+}
+.bar-footer{
+    width: 100%;
+    height: 19px;
+    background-color: #834C50;
+}
+
+/* Estilos Pagina Historia --------------------------------------------------------------------------------------------*/
+
+.header-history{
+    width: 100%;
+    height: auto;
+}
+
+.bar-Navegation-history{
+    width: inherit;
+    height: 19px;
+    position: relative;
+    z-index: 3;
+    background-color: #8B7369;
+}
+
+/* .image-history-general:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+ */
+.image-history{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background-image: url("../imagenes/backgroundHistory.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* background-size: 110%; */
+    animation: animateBackground 4s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 1s;
+
+    /*background-attachment: fixed;
+    background-position: 0% 100%;  */
+    /* margin-left: 0;
+    float: left;
+    padding-left: 0 ; */
+}
+
+@keyframes animateBackground{
+    from{
+        background-size: 0%;
+    }
+    to{
+        background-size: 110%;
+    }
+}
+
+/* .image-history img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: static;
+    
+}
+
+@supports(object-fit: cover){
+    .image-history img{
+    height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      position: fixed;
+      width: 50%;
+    }
+} */
+
+
+.container-history{
+    width: 50%;
+    float: right;
+    background-color: #8B7369;
+}
+
+.container-history p{
+    /* margin: 50px;
+    margin-top: 80px;*/
+    padding: 0px 40px 50px 40px; 
+    text-align: justify;
+    font-size: 24px;
+    font-family: Sitka Banner; 
+    /* letter-spacing: 0;
+    line-height: 20px; */
+    
+}
+
+.container-history-menu{
+    width: auto;
+    /* float: right; */
+    height: 70px;
+    /* text-align: -webkit-center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D4249;
+    margin-bottom: 50px;
+}
+
+.container-history-menu h1{
+    text-align: center;
+    margin: 5px;
+    color: #8B7369;
+    font-family: "Harry P";
+    font-size: 50px;
+    width: 100px;
+    /* border: 2px solid white; */
+}
+
+/* Estilos pagina located---------------------------------------------------------------------------------------------- ------*/
+.header-located{
+    width: 100%;
+    height: auto;
+}
+
+.bar-navegation-located{
+    height: 19px;
+    width: inherit;
+    position: relative;
+    z-index: 3;
+    background-color: #54615C;
+}
+
+.image-located{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 50%;
+    height: 100vh;
+    background-image: url("../imagenes/backgroundLocated.jpg");
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+.container-located{
+    width: 50%;
+    float: right;
+    background-color: #54615C;
+}
+
+.container-located-menu{
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D4249;
+    margin-bottom: 50px;
+}
+
+.container-located-menu h1{
+    text-align: center;
+    margin: 5px;
+    color: #8B7369;
+    font-family: "Harry P";
+    font-size: 50px;
+    width: 100px;
+}
+
+.container-located h2{
+    font-size: 30px;
+    font-family: "Centaur";
+    text-align: center;
+}
+
+.castle-contend-located{
+    width: 466px;
+    height: 698px;
+    padding: 0;
+    margin: auto;
+    background-image: url("../imagenes/castleContendLocated.jpg");
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+
+}
+
+.container-located p{
+    padding: 0px 40px 50px 40px; 
+    text-align: justify;
+    font-size: 24px;
+    font-family: Sitka Banner; 
+}
+
+/* Estilos Eventos----------------------------------------------------------------------------------------------------------------- */
+.header-events{
+    width: 100%;
+    height: auto;
+}
+
+.bar-navegation-events{
+    width: inherit;
+    position: relative;
+    z-index: 3;
+    top: 0;
+    height: 19px;
+    background-color: #3A2D32;
+}
+
+.image-events{
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../imagenes/backgroundEvents.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 10% 50%;
+    image-rendering: auto;
+}
+
+.container-events{
+    width: 50%;
+    float: right;
+    background-color: #885341;
+}
+
+.container-events-menu{
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #603935;
+    margin-bottom: 0px;
+}
+
+.container-events-menu h1{
+    text-align: center;
+    margin: 5px;
+    color: #C1B6B6;
+    font-family: "Harry P";
+    font-size: 50px;
+    width: 100px;
+}
+.container-events-nav{
+    width: auto;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #707070;
+    background-color: #603935;
+}
+
+.container-events-nav a{
+    color: #C1B6B6;
+    font-family: "Harry P";
+    /* border: 2px solid white; */
+    text-decoration: none;
+    font-size: 35px;
+    
+    text-align: center;
+    height: 50px;
+    width: 33.3%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: transparent;
+    transition: color 0.5s, background 0.5s;
+}
+
+.container-events-nav a:hover{
+    background-color: #C1B6B6;
+    color:#603935;
+}
+
+.container-events p{
+    text-align: justify;
+    font-size: 24px;
+    font-family: Sitka Banner; 
+}
+
+.container-events h2{
+    font-size: 30px;
+    font-family: "Centaur";
+    text-align: center;
+}
+
+.container-image-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-text{
+    width: 50%;
+    margin: auto;
+}
+
+.content-match{
+    width: 287px;
+    height: 510px;
+    background-image: url("../imagenes/contest-macth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tournament p{
+    padding: 0px 40px 50px 40px; 
+    text-align: justify;
+    font-size: 24px;
+    font-family: Sitka Banner; 
+}
+
+
+.image-dragon{
+    margin: auto;
+    width: 466px;
+    height: 803px;
+    background-image: url("../imagenes/image-dragon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-aqua{
+    margin: auto;
+    margin-right: 0;
+    width: 312px;
+    height: 492px;
+    background-image: url("../imagenes/image-aqua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-trophy{
+    margin: auto;
+    margin-left: 0;
+    width: 312px;
+    height: 492px;
+    background-image: url("../imagenes/image-trophy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.club p{
+    padding: 0px 40px 50px 40px; 
+    text-align: justify;
+    font-size: 24px;
+    font-family: Sitka Banner; 
+}
+
+/* Estilos reference--------------------------------------------------------------------------------------------------------- */
+.header-refer{
+    width: 100%;
+    height: auto;
+}
+
+.bar-navegation-refer{
+    width: inherit;
+    position: relative;
+    z-index: 3;
+    top: 0;
+    height: 19px;
+    background-color: #262B2C;
+}
+
+.image-refer{
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url("../imagenes/prueba1.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center bottom;
+    /* background-origin: content-box; */
+    background-size: 100%;
+    image-rendering: auto;
+}
+
+.container-refer{
+    width: 50%;
+    float: right;
+    background-color: #B2AAA7;
+}
+
+.container-refer p{
+    font-size: 24px;
+    font-family: Sitka Banner;
+    padding: 0px 40px 10px 40px;
+    margin-bottom: 10px;
+}
+
+.container-refer li{
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.container-refer a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.container-refer a:hover{
+    text-decoration: underline;
+    color: darkslategray;
+}
+
+.container-refer-menu{
+    width: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #313735;
+}
+
+.container-refer-menu h1{
+    text-align: center;
+    margin: 5px;
+    color: #C1B6B6;
+    font-family: "Harry P";
+    font-size: 50px;
+    width: 100px;
+}
+
+.logo-wizarding{
+    width: 100PX;
+    height: 80PX;
+    margin: auto;
+    background-image: url("../imagenes/wizardingWorldLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.footer-refer{
+    width: auto;
+    background-color: #6C6C6C;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-refer h1{
+    width: max-content;
+    font-weight: normal;
+    font-family: Garamond;
+    font-style: normal;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.image-footer{
+    width: 70%;
+    height: 30px;
+    margin: auto;
+    background-image: url("../imagenes/lineaFooter.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+.container-about-us{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    /* float: left; */
+}
+
+.container-about-us p{
+    font-family: Garamond;
+    font-size: 14px;
+}
+
+.logo-un{
+    width: 100px;
+    height: 100px;
+    background-image: url("../imagenes/unLogo.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* float: right; */
+    background-size: contain;
+}
+
+.development{
+    margin-left: 40px;
+}
+
+.development p{
+    padding: 0em;
+    font-family: Garamond;
+    font-size: 14px;
+}
+
+.logos-development{
+    width: max-content;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.xd{
+    width: 55px;
+    height: 55px;
+    background-image: url("../imagenes/xd.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ai{
+    width: 50px;
+    height: 50px;
+    background-image: url("../imagenes/ai.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.css{
+    width: 50px;
+    height: 50px;
+    background-image: url("../imagenes/css.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.html{
+    width: 50px;
+    height: 50px;
+    background-image: url("../imagenes/html.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-image: url("../imagenes/icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cloud{
+    width: 50px;
+    height: 50px;
+    background-image: url("../imagenes/cloud.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.vs{
+    width: 50px;
+    height: 50px;
+    background-image: url("../imagenes/vs.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+

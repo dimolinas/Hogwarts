@@ -1,0 +1,11 @@
+<svg id="Componente_9_1" data-name="Componente 9 – 1" xmlns="http://www.w3.org/2000/svg" width="485" height="308.511" viewBox="0 0 485 308.511">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #995556;
+      }
+    </style>
+  </defs>
+  <rect id="Rectángulo_11" data-name="Rectángulo 11" class="cls-1" width="415" height="140" rx="5" transform="translate(35.406)"/>
+  <path id="Polígono_1" data-name="Polígono 1" class="cls-1" d="M230.594,9.574a19,19,0,0,1,23.813,0L442.958,161.193c13.978,11.24,6.03,33.807-11.906,33.807H53.948c-17.936,0-25.884-22.567-11.906-33.807Z" transform="translate(485 308.511) rotate(180)"/>
+</svg>
