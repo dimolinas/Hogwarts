@@ -432,6 +432,14 @@ body{
     font-family: Sitka Banner; 
 }
 
+.video-youtube{
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    /* background-color: brown; */
+    margin-bottom: 60px;
+}
+
 /* Estilos Eventos----------------------------------------------------------------------------------------------------------------- */
 .header-events{
     width: 100%;
