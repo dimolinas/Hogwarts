@@ -180,7 +180,7 @@ body{
     background-image: url("../imagenes/backgroundHistory.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    /* background-size: 110%; */
+    background-size: 100%;
     animation: animateBackground 4s cubic-bezier(0.19, 1, 0.22, 1);
     animation-delay: 1s;
 
@@ -836,5 +836,128 @@ body{
     background-size: 100%;
 }
 
+/* ResponsiveDesign-------------------------------------------------------------------------------------------------------------------*/
+/* width: 1920px */
+@media (min-width: 1920px){
+/* menu---------------------------------------------------------------------------------------------------------------------------------- */
+    .menu-container-general a{
+        font-size:6rem;
+    }
+/*references------------------------------------------------------------------------------------------------------------------------- */
+    .bar-navegation-refer{
+        height: 30px;
+    }
+    .container-refer-menu{
+        height: 85px;
+    }
+    .container-refer-menu h1{
+        font-size: 62px;
+    }
 
+    .container-refer p{
+        font-size: 29px;
+    }
+    .links-references a{
+        font-size: 26px;
+    }
+    .toggler{
+        height: 70px;
+        width: 70px;
+    }
+    .nav{
+        width: 80px;
+    }
 
+    .logo-wizarding{
+        width: 125px;
+        height: 102px;
+    }
+
+    .footer-refer h1{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .image-footer{
+        width: 80%;
+        height: 45px;
+    }
+
+    .logo-un{
+        width: 260px;
+        height: 126px;
+    }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Events*/
+    .bar-navegation-events{
+    height: 30px;
+    }
+    .container-events-menu{
+        height: 85px;
+    }
+    .container-events-menu h1{
+        font-size: 85px;
+    }
+    .container-events-nav{
+        height: 65px;
+    }
+    .container-events-nav a{
+        font-size: 48px;
+        height: 65px;
+    }
+    .container-events h2{
+        font-size: 42px;
+    }
+    .container-events p{
+        font-size: 31px;
+    }
+/* Located--------------------------------------------------------------------------------------------------------------------------------------- */
+    .bar-navegation-located{
+        height: 30px;
+    }
+
+    .container-located-menu{
+        height: 85px;
+    }
+    .container-located-menu h1{
+        font-size: 85px;
+    }
+    .container-located h2{
+        font-size: 43px;
+    }
+    .container-located p{
+        font-size: 29px;
+    }
+/* history--------------------------------------------------------------------------------------------------------------------------------------- */
+    .bar-Navegation-history{
+        height: 30px;
+    }   
+    .container-history-menu{
+        height: 85px;
+    }
+
+    .container-history-menu h1{
+        font-size: 85px;
+    }
+    .container-history p{
+        font-size: 27px;
+    }
+/* home------------------------------------------------------------------------------------------------------------------------------*/
+    .shield{
+        width: 452px;
+        height: 283px;
+    }
+    .barNavegation{
+        height: 30px;
+    }
+    .containerMenu-left,
+    .containerMenu-rigth{
+        height: 103px;
+    }
+    .containerMenu-left a,
+    .containerMenu-rigth a{
+        font-size: 80px;
+        height: 80px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
