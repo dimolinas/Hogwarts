@@ -135,6 +135,7 @@ body{
     margin: auto;
     background-color: #834C50;
     background-image: url("../imagenes/1castleBackground.png");
+    transition: cubic-bezier(.46,.03,.52,.96) 0.4s;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -192,33 +193,12 @@ body{
 
 @keyframes animateBackground{
     from{
-        background-size: 0%;
+        background-size: 500%;
     }
     to{
-        background-size: 110%;
+        background-size: 100%;
     }
 }
-
-/* .image-history img{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    position: static;
-    
-}
-
-@supports(object-fit: cover){
-    .image-history img{
-    height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      position: fixed;
-      width: 50%;
-    }
-} */
-
 
 .container-history{
     width: 50%;
@@ -264,6 +244,7 @@ body{
 .nav{
     display: block;
     position: absolute;
+    z-index: 3;
     left: 95%;
     /* border:2px solid white; */
     margin:0 ;
@@ -274,7 +255,7 @@ body{
 .toggler{
     position: absolute;
     left: 95%;
-    z-index: 2;
+    z-index: 4;
     width: 50px;
     height: 50px;
     opacity: 0;
@@ -302,6 +283,40 @@ body{
     display: none;
 }
  */
+ .menu-container-general{
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background-color:#262b31b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: cubic-bezier(.46,.03,.52,.96) 0.4s;
+}
+
+.container-links{
+    width: max-content;
+    height: auto;
+    display: grid;
+    background-color: transparent;
+}
+
+.menu-container-general a{
+    width: max-content;
+    font-size: 4rem;
+    font-family: HARRYP__;
+    text-decoration: none;
+    color: #fff;
+    transition: ease 0.4s;
+}
+
+.menu-container-general a:hover{
+    color: #262b2c;
+    font-size: 5rem;
+}
 
 .toggler:checked + .nav .two{
     transform: rotate(135deg); 
@@ -318,9 +333,13 @@ body{
     display: none;
 }
  
+.toggler:checked ~ .menu-container-general{
+    left: 50%;
+}
 /* .toggler:checked:hover + .nav {
     transform: rotate(45deg);
 } */
+
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
 .container-history-menu h1{
@@ -332,6 +351,7 @@ body{
     width: 100px;
     /* border: 2px solid white; */
 }
+
 
 /* Estilos pagina located---------------------------------------------------------------------------------------------- ------*/
 .header-located{
@@ -625,13 +645,13 @@ body{
     margin-left: 20px;
 }
 
-.container-refer a{
+.links-references a{
     text-decoration: none;
     font-size: 20px;
     color: black;
 }
 
-.container-refer a:hover{
+.links-references a:hover{
     text-decoration: underline;
     color: darkslategray;
 }
@@ -654,9 +674,21 @@ body{
     width: 100px;
 }
 
+.navegation-map{
+    width: 40vw;
+    height: 30vh;
+    margin: auto;
+    background-image: url("../imagenes/navegation-map.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    filter: grayscale(50%);
+    z-index: 0;
+}
+
 .logo-wizarding{
-    width: 100PX;
-    height: 80PX;
+    width: 100px;
+    height: 80px;
     margin: auto;
     background-image: url("../imagenes/wizardingWorldLogo.png");
     background-position: center;
