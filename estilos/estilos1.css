@@ -159,7 +159,7 @@ body{
     width: inherit;
     height: 19px;
     position: relative;
-    z-index: 3;
+    z-index: 1;
     background-color: #8B7369;
 }
 
@@ -171,6 +171,7 @@ body{
  */
 .image-history{
     position: fixed;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 50%;
@@ -248,6 +249,79 @@ body{
     background-color: #3D4249;
     margin-bottom: 50px;
 }
+
+
+/* Estilos menu hamburguesa--------------------------------------------------------------------------------------------------- */
+.nav div{
+    height: 5px;
+    background-color: #C1B6B6;   
+    margin: 5px 0;
+    border-radius: 24px;
+    transition: .3s;
+    
+}
+
+.nav{
+    display: block;
+    position: absolute;
+    left: 95%;
+    /* border:2px solid white; */
+    margin:0 ;
+    width: 50px;
+    transition:  all 0.4s ease;
+}
+
+.toggler{
+    position: absolute;
+    left: 95%;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.one{
+    width: 70%;
+    z-index: 1;
+}
+
+.two{
+    width: 50%;
+}
+
+.three{
+    width: 40%;;
+}
+
+.toggler:hover + .nav div{
+    width: 100%;
+}
+
+
+/* .toggler:checked + .nav .three{
+    display: none;
+}
+ */
+
+.toggler:checked + .nav .two{
+    transform: rotate(135deg); 
+    width: 70%;
+}
+
+.toggler:checked + .nav .three{
+    width: 70%;
+    -webkit-transform: translateY(-10px) rotate(-135deg);
+}
+
+
+.toggler:checked + .nav .one{
+    display: none;
+}
+ 
+/* .toggler:checked:hover + .nav {
+    transform: rotate(45deg);
+} */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
 
 .container-history-menu h1{
     text-align: center;
