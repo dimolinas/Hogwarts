@@ -1003,6 +1003,9 @@ body{
     .image-history{
         position: relative;
         width: 100%;
+        height: 80vh;
     }
-
+    .container-history{
+        width: 100%;
+    }
 }
