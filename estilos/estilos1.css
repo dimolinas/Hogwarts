@@ -743,7 +743,7 @@ body{
 
 .container-about-us p{
     font-family: Garamond;
-    font-size: 14px;
+    font-size: 20px !important;
 }
 
 .logo-un{
@@ -763,7 +763,7 @@ body{
 .development p{
     padding: 0em;
     font-family: Garamond;
-    font-size: 14px;
+    font-size: 20px !important;
 }
 
 .logos-development{
@@ -961,3 +961,24 @@ body{
     }
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
+@media (max-width: 600px){
+    /* menu */
+    .nav{
+        left: 85%;
+    }
+    .toggler{
+        left: 85%;
+    }
+    .menu-container-general{
+        width: 100%;
+        left: 100%;
+    }
+    .toggler:checked ~ .menu-container-general{
+        left: 0;
+    }    
+    /* home */
+    .containerMenu-left a,
+    .containerMenu-rigth a{
+        display: none;
+    }
+}
