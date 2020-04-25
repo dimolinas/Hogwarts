@@ -963,10 +963,9 @@ body{
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 @media (max-width: 600px){
     /* menu */
-    .nav{
-        left: 85%;
-    }
+    .nav,
     .toggler{
+        top: 30px;
         left: 85%;
     }
     .menu-container-general{
@@ -976,9 +975,27 @@ body{
     .toggler:checked ~ .menu-container-general{
         left: 0;
     }    
-    /* home */
+/* home------------------------------------------------------------------------------------------------------------------*/
+    .barNavegation{
+        background-color: #49455A;
+    }
     .containerMenu-left a,
     .containerMenu-rigth a{
         display: none;
+    }
+    .containerMenu-rigth,
+    .containerMenu-left{
+        background-color: #171D2D;
+    }
+    .shield{
+        background-image: url("../imagenes/shiel-movil.png");
+    }
+    .imageBackground{
+        background-image: url("../imagenes/background-movil.jpg");   
+    }
+/* history------------------------------------------------------------------------------------------------------------------- */
+    .image-history{
+        position: relative;
+        width: 100%;
     }
 }
