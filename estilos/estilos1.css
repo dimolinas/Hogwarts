@@ -979,6 +979,9 @@ body{
     .nav div{
         background-color: #262B30;
     }
+    .toggler:checked ~ .nav div{
+        background-color: ivory;
+    }
     .toggler{
         z-index: 5;
     }
@@ -1100,5 +1103,45 @@ body{
     .vs{
         width: 2rem;
         height: 2rem;
+    }
+}
+
+@media (max-width:1024px) and (min-width:600px){
+/* menu-------------------------------------------------------------------------------------------------------- */
+    .menu-container-general{
+        width: 100%;
+        left: 100%;
+        z-index: 3;
+    }
+    .toggler:checked ~ .menu-container-general{
+        left: 0;
+    }   
+    .nav div{
+        background-color: #262B30;
+    }
+    .toggler:checked ~ .nav div{
+        background-color: ivory;
+    }
+/* home-------------------------------------------------------------------------------------------------------------- */
+    .imageBackground{
+        background-image: url("../imagenes/ipad-background.jpg");
+        background-size: cover;
+        background-position: left;
+    }
+    .containerMenu-left,
+    .containerMenu-rigth{
+        background-color: #523A1D;
+        width: 40%
+    }
+    .containerMenu-left a,
+    .containerMenu-rigth a{
+        color: #151110;;
+    }
+    .barNavegation{
+        background-color: #241810;
+    }
+    .containerMenu-left a:hover,
+    .containerMenu-rigth a:hover{
+        background-color: #5e4121;
     }
 }
