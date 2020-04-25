@@ -967,17 +967,23 @@ body{
     .toggler{
         top: 30px;
         left: 85%;
+        z-index: 4;
+    }
+    .toggler{
+        z-index: 5;
     }
     .menu-container-general{
         width: 100%;
         left: 100%;
+        z-index: 3;
     }
     .toggler:checked ~ .menu-container-general{
         left: 0;
     }    
+    
 /* home------------------------------------------------------------------------------------------------------------------*/
     .barNavegation{
-        background-color: #49455A;
+        background-color: #4F3F44;
     }
     .containerMenu-left a,
     .containerMenu-rigth a{
@@ -998,4 +1004,5 @@ body{
         position: relative;
         width: 100%;
     }
+
 }
