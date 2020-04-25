@@ -413,8 +413,8 @@ body{
 }
 
 .castle-contend-located{
-    width: 466px;
-    height: 698px;
+    width: 80%;
+    height: 90vh;
     padding: 0;
     margin: auto;
     background-image: url("../imagenes/castleContendLocated.jpg");
@@ -570,8 +570,8 @@ body{
 
 .image-dragon{
     margin: auto;
-    width: 466px;
-    height: 803px;
+    width: 60%;
+    height: 80vh;
     background-image: url("../imagenes/image-dragon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
